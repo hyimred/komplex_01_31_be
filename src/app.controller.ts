@@ -19,7 +19,7 @@ export class AppController {
   @Get('/csavar')
   async listScrews() {
     const screwRepo = this.dataSource.getRepository(Screw);
-    return {storage: await screwRepo.find() };
+    return {Screws: await screwRepo.find() };
   }
 
   @Post('/csavar')
