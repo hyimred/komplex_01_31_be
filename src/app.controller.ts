@@ -12,6 +12,6 @@ export class AppController {
   @Get()
   @Render('index')
   index() {
-    return { message: 'Welcome to the homepage' };
+    return { message: 'A szerver fut a 3000-es porton. };
   }
 }
