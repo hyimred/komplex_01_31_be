@@ -35,7 +35,7 @@ export class AppController {
     screwRepo.delete(id);
   }
 
-  @Post('/csavar/:id')
+  @Post('/csavar/:id/rendeles')
   newScrewByID(@Body() data: Screw, @Param('id') id: number) {
     const screwRepo = this.dataSource.getRepository(Screw);
     screwRepo.save(data);
